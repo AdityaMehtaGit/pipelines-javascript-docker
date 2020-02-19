@@ -4,6 +4,8 @@ metadata:
   name: adityamehtagitpipelinesjavascriptdocker 
 spec:
   replicas: 1
+  selector:
+    name: adityamehtagitpipelinesjavascriptdocker 
   template:
     metadata:
       labels:
