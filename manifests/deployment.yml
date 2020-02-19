@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: adityamehtagitpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: adityamehtagitpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: adityamehtagitpipelinesjavascriptdocker 
+          image: aksacrcentralus.azurecr.io/adityamehtagitpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
