@@ -2,10 +2,13 @@ apiVersion : apps/v1
 kind: Deployment
 metadata:
   name: adityamehtagitpipelinesjavascriptdocker 
+  labels:
+     app: adityamehtagitpipelinesjavascriptdocker
 spec:
   replicas: 1
   selector:
-    name: adityamehtagitpipelinesjavascriptdocker 
+    matchLabels:
+      app: adityamehtagitpipelinesjavascriptdocker
   template:
     metadata:
       labels:
